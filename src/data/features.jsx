@@ -9,7 +9,7 @@ import client from "../assets/clients.png";
 import leads from "../assets/leads.png";
 import payments from "../assets/payments.webp";
 import client_progress from "../assets/client-progress.webp";
-import workflow from "../assets/Workflow.webp";
+import workflow from "../assets/workflow.webp";
 import engage from "../assets/engage.png";
 import finance from "../assets/finance.webp";
 import realtime from"../assets/Lead Management.png"
