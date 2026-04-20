@@ -68,9 +68,9 @@ function NavItem({ section,onClick }) {
   return (
     <button
       onClick={() => onClick(section.id)}
-      className={`flex items-center gap-2.5 w-full px-5 py-3 text-left transition-all duration-150 border-l-2 border-l-transparent text-[#5e4f5a] hover:bg-[#faf4fc]`}
+      className={`flex items-center gap-2.5 w-full px-5 py-3 text-left transition-all duration-150 border-l-2 border-l-transparent text-[#5e4f5a] hover:bg-[#f0e8f5] group`}
     >
-      <Icon size={13} className={`flex-shrink-0 opacity-50`} />
+      <Icon size={13} className={`flex-shrink-0 opacity-50 group-hover:bg-[#dfd0ea]`} />
       <span className={`text-[12.5px] flex-1 leading-snug font-normal`}>
         {section.label}
       </span>
@@ -188,6 +188,7 @@ export default function TermsAndConditions() {
   const contentRef = useRef(null);
   const sectionRefs = useRef({});
 const [showMedicalPopup, setShowMedicalPopup] = useState(false);
+const [showTransferPopup, setShowTransferPopup] = useState(false);
   useEffect(() => {
   const el = contentRef.current;
   if (!el) return;
@@ -230,7 +231,7 @@ const [showMedicalPopup, setShowMedicalPopup] = useState(false);
 
   return (
 <div className="flex w-full h-screen font-sans bg-white overflow-hidden">
-<nav className="hidden md:flex w-[300px] min-w-[300px]  sticky self-start bg-white border-r border-[#ede8e7] flex-col max-h-[100vh] border-b ">
+<nav className="hidden md:flex w-[300px] min-w-[300px]  sticky self-start bg-[#faf6fc] border-r border-[#ede8e7] flex-col max-h-[100vh] border-b ">
             <div className="px-5 pt-6 pb-4 border-b border-[#ede8e7]">
           <div className="flex items-center gap-2.5 mb-1">
             <div className="w-7 h-7 rounded-[7px] bg-purple-900 flex items-center justify-center">
@@ -392,7 +393,7 @@ const [showMedicalPopup, setShowMedicalPopup] = useState(false);
           {/* 10 */}
           <section id="program-transfer" ref={ref("program-transfer")} className="mb-8 sm:mb-10">
             <SectionHeader num="10" title="Program Change & Transfer" icon={RefreshCw} />
-            <P>For details on programme changes and transfers, please refer to the <span className="text-[#47294c] font-medium underline cursor-pointer">Program Change &amp; Transfer Policy</span> available on our website.</P>
+            <P>For details on programme changes and transfers, please refer to the <span onClick={() => setShowTransferPopup(true)} className="text-[#47294c] font-medium underline cursor-pointer">Program Change &amp; Transfer Policy</span> available on our website.</P>
           </section>
 
           <Divider />
@@ -493,7 +494,7 @@ const [showMedicalPopup, setShowMedicalPopup] = useState(false);
           {/* 19 */}
           <section id="pause" ref={ref("pause")} className="mb-8 sm:mb-10">
             <SectionHeader num="19" title="Program Pause" icon={PauseCircle} />
-            <P>Life events may require a temporary pause of your program. You may request a pause by emailing <span className="text-[#47294c] font-medium">care@vmax.fit</span> or <span className="text-[#47294c] font-medium">sales@smartcoach360.ai</span>.</P>
+            <P>Life events may require a temporary pause of your program. You may request a pause by emailing <span className="text-[#47294c] font-medium">sales@smartcoach360.ai</span>.</P>
 
             <p className="text-[13px] font-medium text-[#2e1a32] mt-4 mb-2">Pause Entitlement by Program Duration</p>
             <PauseTable />
@@ -784,6 +785,88 @@ const [showMedicalPopup, setShowMedicalPopup] = useState(false);
       >
         Close
       </button>
+    </div>
+  </div>
+)}
+{showTransferPopup && (
+  <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center px-4 py-6">
+
+    <div className="bg-white w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-6 sm:p-8 relative">
+
+      {/* Close */}
+      <button
+        onClick={() => setShowTransferPopup(false)}
+        className="absolute top-4 right-4 w-9 h-9 rounded-full bg-[#f3eaf6] text-[#47294c] text-xl hover:bg-[#e8d9ee]"
+      >
+        X
+      </button>
+
+      <h2 className="text-2xl font-semibold text-[#2e1a32] mb-6">
+        Program Change & Transfer Policy
+      </h2>
+
+      <div className="space-y-8 text-[14px] leading-[1.8] text-[#3d3040]">
+
+        {/* Section 1 */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#47294c] mb-3">
+            1. Change to a Different Programme
+          </h3>
+
+          <p className="mb-3">
+            A participant may request a one-time change to a different program,
+            subject to the following conditions:
+          </p>
+
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Minimum forty-five (45) days must remain.</li>
+            <li>New program duration must not be less than thirty (30) days.</li>
+            <li>Program duration/access may be adjusted instead of fee adjustment.</li>
+            <li>Prevailing program fee at the time of request shall apply.</li>
+            <li>Any fee difference must be paid by the participant.</li>
+            <li>Program change is permitted only once.</li>
+          </ul>
+        </div>
+
+        {/* Section 2 */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#47294c] mb-3">
+            2. Transfer to Different Individual
+          </h3>
+
+          <p className="mb-3">
+            A participant may request a one-time transfer of enrollment to
+            another individual, subject to the following conditions:
+          </p>
+
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Minimum forty-five (45) days must remain.</li>
+            <li>Only the same program may be transferred unless stated otherwise.</li>
+            <li>
+              Blossom and Queen programs may be converted to credit at provider’s
+              discretion.
+            </li>
+            <li>Prevailing program fee at the time of transfer shall apply.</li>
+            <li>New participant must accept all applicable terms and policies.</li>
+            <li>Original participant loses access after transfer.</li>
+            <li>Transfer permitted only once per enrollment.</li>
+          </ul>
+        </div>
+
+        <div className="bg-[#faf4fc] border border-[#e8d9ee] rounded-xl p-4 text-[13px]">
+          All requests are subject to operational review and final approval by
+          SmartCoach360.
+        </div>
+
+      </div>
+
+      <button
+        onClick={() => setShowTransferPopup(false)}
+        className="mt-8 w-full bg-[#47294c] hover:opacity-95 text-white py-3 rounded-xl font-medium"
+      >
+        Close
+      </button>
+
     </div>
   </div>
 )}

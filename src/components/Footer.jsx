@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Instagram, Linkedin, Mail, MapPin, ChevronDown } from 'lucide-react';
-
+import { useNavigate } from 'react-router-dom';
 const socialLinks = [
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/smartcoach360' },
   { name: 'LinkedIn',  icon: Linkedin,  href: 'https://www.linkedin.com/company/smartcoach360/' },

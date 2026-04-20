@@ -6,6 +6,7 @@ import DemoForm from "./components/DemoForm";
 import ContactForm from "./components/ContactForm";
 import { Home } from "./Pages/Home";
 import TermsAndConditions from "./Pages/TermsandCondition";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -36,6 +37,8 @@ if (loading) return <PageLoader />;
           <Routes>
             <Route path="/" element={<Home onOpenContactForm={() => setOpenContactForm(true)}/>} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
 
           </Routes>
         </main>
