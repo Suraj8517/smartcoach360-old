@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
           <div className="mb-8">
             <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#c4b0ce] mb-2 m-0">SmartCoach360 · FitMom Club</p>
             <h1 className="text-[24px] sm:text-[28px] font-bold text-[#2e1a32] mt-0 mb-1.5 tracking-tight">Privacy Policy</h1>
-            <p className="text-[12.5px] text-[#a593a1] m-0">VMax Health Tech Private Limited</p>
+            <p className="text-[12.5px] text-[#a593a1] m-0">SmartCoach360</p>
           </div>
 
           <Callout>
@@ -182,7 +182,7 @@ export default function PrivacyPolicy() {
 
           <section id="introduction" ref={ref("introduction")} className="mb-10">
             <SectionHeader num="01" title="Introduction" icon={FileText} />
-            <P>Welcome to <strong>fitmomclub.co</strong> (referred to as the "Website"). FitMom Club is registered as <strong>VMax Health Tech Private Limited</strong>, a company incorporated under the Companies Act, 2013. Its registered office is located at No.6/53, Ajay Complex, Urumandam Palayam, G.N. Mills (Po), Coimbatore, Tamil Nadu, India – 641029. FitMom Club is recognized as "We" and "Us".</P>
+            <P>Welcome to <strong>fitmomclub.co</strong> (referred to as the "Website"). FitMom Club is registered as <strong>SmartCoach360</strong>, a company incorporated under the Companies Act, 2013. Its registered office is located at No.6/53, Ajay Complex, Urumandam Palayam, G.N. Mills (Po), Coimbatore, Tamil Nadu, India – 641029. FitMom Club is recognized as "We" and "Us".</P>
             <P>The agreement between you and us is entirely governed by these terms and any applicable policies; it also supersedes all other agreements.</P>
             <InfoBox>This Privacy Policy describes our privacy practices for all websites, products, and services that are linked to it. However, this policy does not apply to affiliates and partners that have their own privacy policy. In such cases, we advise reading the privacy statement on the relevant website.</InfoBox>
           </section>
@@ -281,7 +281,6 @@ export default function PrivacyPolicy() {
             <P>We strongly encourage you to visit this page frequently to obtain the most recent information on our privacy practices.</P>
             <SubHeading>Registered Address</SubHeading>
             <div className="bg-[#f7f2fa] rounded-xl px-4 py-4 text-[13px] text-[#3d3040] leading-[1.8] mt-2">
-              <p className="m-0 font-semibold text-[#2e1a32]">VMax Health Tech Private Limited</p>
               <p className="m-0 text-[#5e4f5a]">No.6/53, Ajay Complex, Urumandam Palayam,</p>
               <p className="m-0 text-[#5e4f5a]">G.N. Mills (Po), Coimbatore, Tamil Nadu,</p>
               <p className="m-0 text-[#5e4f5a]">India – 641029</p>

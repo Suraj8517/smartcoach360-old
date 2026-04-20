@@ -231,7 +231,7 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
 
   return (
 <div className="flex w-full h-screen font-sans bg-white overflow-hidden">
-<nav className="hidden md:flex w-[300px] min-w-[300px]  sticky self-start bg-[#faf6fc] border-r border-[#ede8e7] flex-col max-h-[100vh] border-b ">
+<nav className="hidden md:flex w-[300px] min-w-[300px]  md:sticky self-start bg-[#faf6fc] border-r border-[#ede8e7] flex-col max-h-[100vh] border-b ">
             <div className="px-5 pt-6 pb-4 border-b border-[#ede8e7]">
           <div className="flex items-center gap-2.5 mb-1">
             <div className="w-7 h-7 rounded-[7px] bg-purple-900 flex items-center justify-center">
