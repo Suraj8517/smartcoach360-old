@@ -268,7 +268,7 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
           </div>
         </div>
 
-        <div className="max-w-[740px] mx-auto px-4 sm:px-8 md:px-12 pt-6 sm:pt-10 pb-16">
+        <div className="max-w-[75%] mx-auto px-4 sm:px-8 md:px-12 pt-6 sm:pt-10 pb-16">
 
           {/* Page heading */}
           <div className="mb-8 sm:mb-10">

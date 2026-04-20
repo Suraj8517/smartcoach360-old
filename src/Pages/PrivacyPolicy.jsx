@@ -163,41 +163,10 @@ export default function PrivacyPolicy() {
               <p className="text-[10.5px] text-[#b09aba] m-0 mt-0.5 leading-none">SmartCoach360</p>
             </div>
           </div>
-          <button
-            onClick={() => setMobileNavOpen(true)}
-            className="w-8 h-8 rounded-lg bg-[#f5eff8] flex items-center justify-center text-[#6b3f7a]"
-          >
-            <Menu size={15} />
-          </button>
-        </div>
-
-        {/* Mobile Nav Overlay */}
-        {mobileNavOpen && (
-          <div className="md:hidden fixed inset-0 z-50 bg-black/30" onClick={() => setMobileNavOpen(false)}>
-            <div
-              className="absolute left-0 top-0 bottom-0 w-[265px] bg-[#faf6fc] flex flex-col shadow-2xl"
-              onClick={e => e.stopPropagation()}
-            >
-              <div className="px-5 pt-6 pb-4 flex items-center justify-between">
-                <p className="text-[13px] font-bold text-[#2e1a32] m-0">Contents</p>
-                <button
-                  onClick={() => setMobileNavOpen(false)}
-                  className="w-7 h-7 rounded-lg bg-[#ede4f2] flex items-center justify-center text-[#6b3f7a]"
-                >
-                  <X size={13} />
-                </button>
-              </div>
-              <div className="flex-1 overflow-y-auto px-3 space-y-0.5">
-                {sections.map((s) => (
-                  <NavItem key={s.id} section={s} onClick={scrollToSection} />
-                ))}
-              </div>
-            </div>
           </div>
-        )}
 
         {/* Content */}
-        <div className="max-w-[700px] mx-auto px-5 sm:px-8 md:px-14 pt-10 sm:pt-14 pb-20">
+        <div className="max-w-[75%] mx-auto px-5 sm:px-8 md:px-14 pt-10 sm:pt-14 pb-20">
 
           <div className="mb-8">
             <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#c4b0ce] mb-2 m-0">SmartCoach360 · FitMom Club</p>

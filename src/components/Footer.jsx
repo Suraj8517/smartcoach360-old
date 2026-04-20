@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Instagram, Linkedin, Mail, MapPin, ChevronDown } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const socialLinks = [
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/smartcoach360' },
   { name: 'LinkedIn',  icon: Linkedin,  href: 'https://www.linkedin.com/company/smartcoach360/' },
@@ -24,7 +24,6 @@ function FooterSection({ title, children }) {
         />
       </button>
 
-      {/* Content: always visible on md+, collapsible on mobile */}
       <div
         className={`overflow-hidden transition-all duration-300 md:!max-h-none md:!opacity-100 md:pb-0 ${
           open ? 'max-h-96 opacity-100 pb-4' : 'max-h-0 opacity-0'
@@ -122,6 +121,23 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
                   Contact Us
                 </button>
               </li>
+              <li>
+      <Link
+        to="/terms-and-conditions"
+        className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm inline-block"
+      >
+        Terms and Conditions
+      </Link>
+    </li>
+       <li>
+      <Link
+        to="/privacy-policy"
+        className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm inline-block"
+      >
+        Privacy Policy
+      </Link>
+    </li>
+
             </ul>
           </FooterSection>
 

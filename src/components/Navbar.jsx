@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import logo from '../assets/Coach 360 Logo.png'
+import { Link } from "react-router-dom";
 export default function Navbar({ onOpenForm, onOpenContactForm }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 lg:py-2">
-      <div className="xl:max-w-7xl 2xl:max-w-10xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="xl:max-w-8xl mx-auto px-8 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* LOGO */}
+       
           <div className="flex items-center">
+            <Link to="/" className="flex items-center gap-2">
             <img src={logo} className="w-40" alt="logo"></img>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
