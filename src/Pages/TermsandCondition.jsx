@@ -231,7 +231,7 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
 
   return (
 <div className="flex w-full h-screen font-sans bg-white overflow-hidden">
-<nav className="hidden md:flex w-[300px] min-w-[300px]  md:sticky self-start bg-[#faf6fc] border-r border-[#ede8e7] flex-col max-h-[100vh] border-b ">
+<nav className="hidden md:flex w-[300px] min-w-[300px]  sticky self-start bg-[#faf6fc] border-r border-[#ede8e7] flex-col max-h-[100vh] border-b ">
             <div className="px-5 pt-6 pb-4 border-b border-[#ede8e7]">
           <div className="flex items-center gap-2.5 mb-1">
             <div className="w-7 h-7 rounded-[7px] bg-purple-900 flex items-center justify-center">
@@ -258,16 +258,6 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
   className="flex-1 overflow-y-auto bg-white h-[100vh] my-4 py-12"
 >
 
-        <div className="md:hidden flex items-center gap-2.5 px-5 py-4 border-b border-[#ede8e7] sticky top-0 bg-white z-10">
-          <div className="w-7 h-7 rounded-[7px] bg-purple-900 flex items-center justify-center">
-            <FileText size={14} color="#fff" />
-          </div>
-          <div>
-            <p className="text-[14px] font-semibold text-[#2e1a32] m-0 leading-none">SmartCoach360</p>
-            <p className="text-[11px] text-[#a593a1] m-0 mt-0.5 leading-none">Terms &amp; Conditions</p>
-          </div>
-        </div>
-
         <div className="max-w-[75%] mx-auto px-4 sm:px-8 md:px-12 pt-6 sm:pt-10 pb-16">
 
           {/* Page heading */}
@@ -279,7 +269,7 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
           </div>
 
           <Callout>
-            By registering, purchasing a program, or using any Smartoach360 service, you agree to be bound by these Terms and Conditions. Please read them carefully before proceeding.
+            By registering, purchasing a program, or using any SmartCoach360 service, you agree to be bound by these Terms and Conditions. Please read them carefully before proceeding.
           </Callout>
 
           <Divider />
@@ -287,8 +277,8 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
           {/* 01 */}
           <section id="introduction" ref={ref("introduction")} className="mb-8 sm:mb-10">
             <SectionHeader num="01" title="Introduction" icon={FileText} />
-            <P>These Terms and Conditions ("Terms") govern your access to and use of the services, programs, coaching, products, and digital content provided by SmartCoach360 ("Smartoach360", "we", "our", or "us").</P>
-            <InfoBox>Smartoach360 does not provide medical advice. All fitness, nutrition, or wellness information is for general guidance only. You should seek professional medical approval before beginning any exercise or nutrition program.</InfoBox>
+            <P>These Terms and Conditions ("Terms") govern your access to and use of the services, programs, coaching, products, and digital content provided by SmartCoach360 ("SmartCoach360", "we", "our", or "us").</P>
+            <InfoBox>SmartCoach360 does not provide medical advice. All fitness, nutrition, or wellness information is for general guidance only. You should seek professional medical approval before beginning any exercise or nutrition program.</InfoBox>
           </section>
 
           <Divider />
@@ -296,7 +286,7 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
           {/* 02 */}
           <section id="services" ref={ref("services")} className="mb-8 sm:mb-10">
             <SectionHeader num="02" title="Services Provided" icon={Dumbbell} />
-            <P>Smartoach360 offers digital fitness and nutrition services, including:</P>
+            <P>SmartCoach360 offers digital fitness and nutrition services, including:</P>
             <BulletList items={["Training videos", "Training guides", "Online coaching", "Diet plans", "E-books", "Personalized fitness and nutrition programs"]} />
           </section>
 
@@ -329,12 +319,12 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
           {/* 05 */}
           <section id="program-plans" ref={ref("program-plans")} className="mb-8 sm:mb-10">
             <SectionHeader num="05" title="Program Plans" icon={Star} />
-            <P>Smartoach360 may offer different plan durations, billing cycles, and features. By enrolling in a plan, you agree to the terms applicable to that plan.</P>
+            <P>SmartCoach360 may offer different plan durations, billing cycles, and features. By enrolling in a plan, you agree to the terms applicable to that plan.</P>
             <AlphaBulletList items={[
               "No one-on-one or personal live coaching sessions are provided unless explicitly stated.",
               "Trainer availability may vary. Trainer assignments may change due to scheduling or operational reasons, but we ensure smooth transitions.",
               "Session timings and durations may change depending on coach availability and program updates.",
-              "All clients are required to use the Smartoach360Club App to ensure full access to program features and support.",
+              "All clients are required to use the SmartCoach360Club App to ensure full access to program features and support.",
               "The Company reserves the absolute right, at its sole discretion, to conduct live sessions in a combined manner with participants enrolled in one or more programs, courses, batches, or cohorts, whether similar or dissimilar.",
               "The Participant expressly acknowledges and agrees that such combined sessions constitute valid and complete performance of the Company's obligations under these Terms.",
               "Participation in such combined sessions shall not be deemed a change, alteration, misrepresentation, or unfair practice, and shall not entitle the Participant to any refund, credit, compensation, or damages.",

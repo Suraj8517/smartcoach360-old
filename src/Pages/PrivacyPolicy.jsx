@@ -169,7 +169,7 @@ export default function PrivacyPolicy() {
         <div className="max-w-[75%] mx-auto px-5 sm:px-8 md:px-14 pt-10 sm:pt-14 pb-20">
 
           <div className="mb-8">
-            <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#c4b0ce] mb-2 m-0">SmartCoach360 · FitMom Club</p>
+            <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#c4b0ce] mb-2 m-0">SmartCoach360</p>
             <h1 className="text-[24px] sm:text-[28px] font-bold text-[#2e1a32] mt-0 mb-1.5 tracking-tight">Privacy Policy</h1>
             <p className="text-[12.5px] text-[#a593a1] m-0">SmartCoach360</p>
           </div>
@@ -182,7 +182,7 @@ export default function PrivacyPolicy() {
 
           <section id="introduction" ref={ref("introduction")} className="mb-10">
             <SectionHeader num="01" title="Introduction" icon={FileText} />
-            <P>Welcome to <strong>fitmomclub.co</strong> (referred to as the "Website"). FitMom Club is registered as <strong>SmartCoach360</strong>, a company incorporated under the Companies Act, 2013. Its registered office is located at No.6/53, Ajay Complex, Urumandam Palayam, G.N. Mills (Po), Coimbatore, Tamil Nadu, India – 641029. FitMom Club is recognized as "We" and "Us".</P>
+            <P>Welcome to <strong>smartcoach360.ai</strong> (referred to as the "Website"). SmartCoach360 is registered as <strong>SmartCoach360</strong>, a company incorporated under the Companies Act, 2013. Its registered office is located at No.6/53, Ajay Complex, Urumandam Palayam, G.N. Mills (Po), Coimbatore, Tamil Nadu, India – 641029. SmartCoach360 is recognized as "We" and "Us".</P>
             <P>The agreement between you and us is entirely governed by these terms and any applicable policies; it also supersedes all other agreements.</P>
             <InfoBox>This Privacy Policy describes our privacy practices for all websites, products, and services that are linked to it. However, this policy does not apply to affiliates and partners that have their own privacy policy. In such cases, we advise reading the privacy statement on the relevant website.</InfoBox>
           </section>
@@ -191,7 +191,7 @@ export default function PrivacyPolicy() {
 
           <section id="user-info" ref={ref("user-info")} className="mb-10">
             <SectionHeader num="02" title="User Information" icon={UserCircle} />
-            <P>As part of the registration process and when you interface with FitMom, we ask you for specific details. Through the App Services, we will obtain this data in a wide range of formats and sources, including:</P>
+            <P>As part of the registration process and when you interface with SmartCoach360, we ask you for specific details. Through the App Services, we will obtain this data in a wide range of formats and sources, including:</P>
             <BulletList items={["Account registration forms", "Contact us forms", "Other contact with customer support"]} />
             <P>By the use of various technologies, we gather data about how you navigate our website and/or application. This includes information on the operations you completed while using our services, such as:</P>
             <BulletList items={["Services you requested", "Payment method and transactional details"]} />
@@ -217,7 +217,7 @@ export default function PrivacyPolicy() {
 
           <section id="cookies" ref={ref("cookies")} className="mb-10">
             <SectionHeader num="04" title="Cookies" icon={Cookie} />
-            <P>To help comprehend how users engage with the FitMom App, analyse the App Services, and encourage trust and safety, we employ data collecting tools like "cookies" on specific portions of the App. Cookies are small files that are retained on your device's hard disc or other storage space and assist us in providing the App Services.</P>
+            <P>To help comprehend how users engage with the SmartCoach360 App, analyse the App Services, and encourage trust and safety, we employ data collecting tools like "cookies" on specific portions of the App. Cookies are small files that are retained on your device's hard disc or other storage space and assist us in providing the App Services.</P>
             <InfoBox>Please note that there are specific features we provide through the App that can only be enabled by using a "cookie."</InfoBox>
             <Callout>You are always free to decline our cookies if your device permits, although doing so might prevent you from using some features.</Callout>
             <P>We reserve all rights to change this policy from time to time. Any amendments will become effective immediately as the updated Privacy Policy is publicized. We strongly encourage you to visit this page frequently to obtain the most recent information on our privacy practices.</P>
