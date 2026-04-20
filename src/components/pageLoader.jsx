@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/Coach 360 logo.svg";
+import logo from "../assets/Coach 360 Logo.svg";
 
 export default function PageLoader({ onLoadingComplete }) {
   const [isLoading, setIsLoading] = useState(true);
