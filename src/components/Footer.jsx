@@ -38,7 +38,7 @@ function FooterSection({ title, children }) {
 
 const Footer = ({ onOpenForm, onOpenContactForm }) => {
   return (
-    <footer className="bg-[#121212] text-white border-t border-zinc-800 mt-20">
+    <footer className="bg-[#121212] text-white border-t border-zinc-800 ">
       <div className="max-w-5xl mx-auto px-5 py-12 md:py-16">
 
         {/* ── Grid ── */}

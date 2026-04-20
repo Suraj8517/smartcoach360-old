@@ -188,15 +188,6 @@ export default function GrowthSection() {
   return (
     <section className="relative overflow-hidden py-24 px-6">
 
-      <div
-        className="pointer-events-none absolute -top-24 -right-24 w-[480px] h-[480px] rounded-full"
-        style={{ background: `radial-gradient(circle, ${current.accentLight} 0%, transparent 65%)`, transition: "background 0.7s" }}
-      />
-      <div
-        className="pointer-events-none absolute -bottom-20 -left-20 w-[340px] h-[340px] rounded-full"
-        style={{ background: `radial-gradient(circle, ${current.accentLight}90 0%, transparent 70%)` }}
-      />
-
       <div className="relative max-w-5xl mx-auto">
 
         {/* Badge */}

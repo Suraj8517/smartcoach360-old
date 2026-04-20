@@ -53,7 +53,6 @@ export default function ForWhomSection() {
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-24 h-[420px] w-[420px] rounded-full bg-purple-100 blur-[100px]" />
-        <div className="absolute bottom-0 right-0 h-[360px] w-[360px] rounded-full bg-violet-100 blur-[90px]" />
       </div>
 
       <img

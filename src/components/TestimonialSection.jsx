@@ -59,7 +59,6 @@ export default function TestimonialSection() {
     <section className="relative py-16 md:py-24 bg-white overflow-hidden" id="testimonials">
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 bg-purple-100 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-300 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
