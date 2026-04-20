@@ -17,7 +17,7 @@ import nutrition from "../assets/app-images/nutrition tracker.webp";
 import female from "../assets/app-images/Female Tracker.webp";
 import community from "../assets/app-images/community.webp";
 import workout from "../assets/app-images/workout tracker.webp";
-import health from "../assets/app-images/health tracker.webp";
+import health from "../assets/app-images/Health tracker.webp";
 
 export default function MobileAppSection() {
   const leftFeatures = [
