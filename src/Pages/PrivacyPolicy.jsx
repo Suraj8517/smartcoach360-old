@@ -133,7 +133,6 @@ export default function PrivacyPolicy() {
             </div>
             <div>
               <p className="text-[13.5px] font-bold text-[#2e1a32] m-0 leading-tight">Privacy Policy</p>
-              <p className="text-[10.5px] text-[#b09aba] m-0 leading-tight mt-0.5">SmartCoach360</p>
             </div>
           </div>
         </div>
@@ -171,7 +170,6 @@ export default function PrivacyPolicy() {
           <div className="mb-8">
             <p className="text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#c4b0ce] mb-2 m-0">SmartCoach360</p>
             <h1 className="text-[24px] sm:text-[28px] font-bold text-[#2e1a32] mt-0 mb-1.5 tracking-tight">Privacy Policy</h1>
-            <p className="text-[12.5px] text-[#a593a1] m-0">SmartCoach360</p>
           </div>
 
           <Callout>
