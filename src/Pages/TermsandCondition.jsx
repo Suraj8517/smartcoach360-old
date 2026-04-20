@@ -324,7 +324,7 @@ const [showTransferPopup, setShowTransferPopup] = useState(false);
               "No one-on-one or personal live coaching sessions are provided unless explicitly stated.",
               "Trainer availability may vary. Trainer assignments may change due to scheduling or operational reasons, but we ensure smooth transitions.",
               "Session timings and durations may change depending on coach availability and program updates.",
-              "All clients are required to use the SmartCoach360Club App to ensure full access to program features and support.",
+              "All clients are required to use the SmartCoach360 App to ensure full access to program features and support.",
               "The Company reserves the absolute right, at its sole discretion, to conduct live sessions in a combined manner with participants enrolled in one or more programs, courses, batches, or cohorts, whether similar or dissimilar.",
               "The Participant expressly acknowledges and agrees that such combined sessions constitute valid and complete performance of the Company's obligations under these Terms.",
               "Participation in such combined sessions shall not be deemed a change, alteration, misrepresentation, or unfair practice, and shall not entitle the Participant to any refund, credit, compensation, or damages.",

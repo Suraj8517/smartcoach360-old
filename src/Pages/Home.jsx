@@ -35,7 +35,7 @@ export const Home = ({onOpenContactForm}) => {
       <TestimonialSection />
       <SuccessSection />
       <CallToActionSection/>
-      <FAQSection onOpenContactForm />
+      <FAQSection onOpenContactForm={onOpenContactForm} />
           </div>
   )
 }

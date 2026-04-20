@@ -25,7 +25,7 @@ const faqs = [
   }
 ];
 
-const FAQSection = ({ onOpenForm, onOpenContactForm }) => {
+const FAQSection = ({ onOpenContactForm }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {

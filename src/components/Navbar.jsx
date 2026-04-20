@@ -27,7 +27,6 @@ export default function Navbar({ onOpenForm, onOpenContactForm }) {
             >
               Contact Us
             </button>
-            {/* Book A Demo */}
             <button
              onClick={() =>
   window.open(
