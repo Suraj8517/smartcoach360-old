@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Instagram, Linkedin, Mail, MapPin, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 const socialLinks = [
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/smartcoach360' },
   { name: 'LinkedIn',  icon: Linkedin,  href: 'https://www.linkedin.com/company/smartcoach360/' },
@@ -43,7 +45,6 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
         {/* ── Grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 md:gap-8 mb-0 md:mb-12">
 
-          {/* Brand — always visible, not collapsible */}
           <div className="pb-8 md:pb-0 border-b border-zinc-800 md:border-none mb-2 md:mb-0">
             <h2 className="text-xl sm:text-2xl font-bold mb-3">
               SmartCoach<span className="text-purple-500">360</span>
@@ -72,18 +73,19 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
           <FooterSection title="Quick Links">
             <ul className="space-y-3">
               {[
-                { label: 'Features',      href: '#features' },
-                { label: 'App Features',  href: '#app-features' },
-                { label: 'Testimonials',  href: '#testimonials' },
-                { label: 'For Whom',      href: '#for-whom' },
+                { label: 'Features',      href: 'features' },
+                { label: 'App Features',  href: 'app-features' },
+                { label: 'Testimonials',  href: 'testimonials' },
+                { label: 'For Whom',      href: 'for-whom' },
               ].map(({ label, href }) => (
                 <li key={label}>
-                  <a
-                    href={href}
-                    className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm py-1 inline-block"
-                  >
-                    {label}
-                  </a>
+                 <HashLink
+          smooth
+          to={`/#${href}`}
+          className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm py-1 inline-block"
+        >
+          {label}
+        </HashLink>
                 </li>
               ))}
             </ul>
