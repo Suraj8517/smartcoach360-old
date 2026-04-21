@@ -83,6 +83,7 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
                 { label: "App Features", href: "app-features" },
                 { label: "Testimonials", href: "testimonials" },
                 { label: "For Whom", href: "for-whom" },
+                { label: "FAQs", href: "faqs" },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <HashLink
@@ -100,15 +101,6 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
           {/* Resources */}
           <FooterSection title="Resources">
             <ul className="space-y-3">
-              <li>
-                <HashLink
-                  smooth
-                  to={`/#faqs`}
-                  className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm py-1 inline-block"
-                >
-                  FAQs
-                </HashLink>
-              </li>
               <li>
                 <button
                   onClick={() =>
