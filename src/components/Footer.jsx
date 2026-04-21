@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
-import { Instagram, Linkedin, Mail, MapPin, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import React, { useState } from "react";
+import { Instagram, Linkedin, Mail, MapPin, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/smartcoach360' },
-  { name: 'LinkedIn',  icon: Linkedin,  href: 'https://www.linkedin.com/company/smartcoach360/' },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://www.instagram.com/smartcoach360",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/company/smartcoach360/",
+  },
 ];
 
 // Collapsible section for mobile
@@ -22,13 +30,13 @@ function FooterSection({ title, children }) {
       >
         <h3 className="text-base font-semibold text-white">{title}</h3>
         <ChevronDown
-          className={`w-4 h-4 text-zinc-500 transition-transform duration-200 md:hidden ${open ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 text-zinc-500 transition-transform duration-200 md:hidden ${open ? "rotate-180" : ""}`}
         />
       </button>
 
       <div
         className={`overflow-hidden transition-all duration-300 md:!max-h-none md:!opacity-100 md:pb-0 ${
-          open ? 'max-h-96 opacity-100 pb-4' : 'max-h-0 opacity-0'
+          open ? "max-h-96 opacity-100 pb-4" : "max-h-0 opacity-0"
         }`}
       >
         {children}
@@ -41,17 +49,15 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
   return (
     <footer className="bg-[#121212] text-white border-t border-zinc-800 ">
       <div className="max-w-5xl mx-auto px-5 py-12 md:py-16">
-
         {/* ── Grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 md:gap-8 mb-0 md:mb-12">
-
           <div className="pb-8 md:pb-0 border-b border-zinc-800 md:border-none mb-2 md:mb-0">
             <h2 className="text-xl sm:text-2xl font-bold mb-3">
               SmartCoach<span className="text-purple-500">360</span>
             </h2>
             <p className="text-zinc-400 text-sm mb-6 leading-relaxed">
-              Empowering wellness professionals with tools to streamline practice,
-              engage clients, and grow their business with ease.
+              Empowering wellness professionals with tools to streamline
+              practice, engage clients, and grow their business with ease.
             </p>
             <div className="flex gap-3">
               {socialLinks.map(({ name, icon: Icon, href }) => (
@@ -73,19 +79,19 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
           <FooterSection title="Quick Links">
             <ul className="space-y-3">
               {[
-                { label: 'Features',      href: 'features' },
-                { label: 'App Features',  href: 'app-features' },
-                { label: 'Testimonials',  href: 'testimonials' },
-                { label: 'For Whom',      href: 'for-whom' },
+                { label: "Features", href: "features" },
+                { label: "App Features", href: "app-features" },
+                { label: "Testimonials", href: "testimonials" },
+                { label: "For Whom", href: "for-whom" },
               ].map(({ label, href }) => (
                 <li key={label}>
-                 <HashLink
-          smooth
-          to={`/#${href}`}
-          className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm py-1 inline-block"
-        >
-          {label}
-        </HashLink>
+                  <HashLink
+                    smooth
+                    to={`/#${href}`}
+                    className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm py-1 inline-block"
+                  >
+                    {label}
+                  </HashLink>
                 </li>
               ))}
             </ul>
@@ -95,19 +101,20 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
           <FooterSection title="Resources">
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#faqs"
+                <HashLink
+                  smooth
+                  to={`/#faqs`}
                   className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm py-1 inline-block"
                 >
                   FAQs
-                </a>
+                </HashLink>
               </li>
               <li>
                 <button
                   onClick={() =>
                     window.open(
-                      'https://calendly.com/sangameswaran-vmaxhealthtech/30min',
-                      '_blank'
+                      "https://calendly.com/sangameswaran-vmaxhealthtech/30min",
+                      "_blank",
                     )
                   }
                   className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm py-1"
@@ -124,22 +131,21 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
                 </button>
               </li>
               <li>
-      <Link
-        to="/terms-and-conditions"
-        className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm inline-block"
-      >
-        Terms and Conditions
-      </Link>
-    </li>
-       <li>
-      <Link
-        to="/privacy-policy"
-        className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm inline-block"
-      >
-        Privacy Policy
-      </Link>
-    </li>
-
+                <Link
+                  to="/terms-and-conditions"
+                  className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm inline-block"
+                >
+                  Terms and Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/privacy"
+                  className="text-zinc-400 hover:text-white transition-colors duration-300 text-sm inline-block"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </FooterSection>
 
@@ -165,8 +171,10 @@ const Footer = ({ onOpenForm, onOpenContactForm }) => {
                   <MapPin className="w-4 h-4 text-purple-500" />
                 </div>
                 <span className="text-sm leading-relaxed hover:text-white transition-colors duration-300">
-                  No 9/14, Bharathi Street,<br />
-                  Vellakinar, Coimbatore,<br />
+                  No 9/14, Bharathi Street,
+                  <br />
+                  Vellakinar, Coimbatore,
+                  <br />
                   Tamil Nadu, 641029
                 </span>
               </div>

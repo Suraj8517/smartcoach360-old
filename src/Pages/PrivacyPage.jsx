@@ -106,7 +106,7 @@ function SubHeading({ children }) {
   return <p className="text-[13px] font-semibold text-[#2e1a32] mt-4 mb-2">{children}</p>;
 }
 
-export default function PrivacyPolicy() {
+export default function PrivacyPage() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const contentRef = useRef(null);
   const sectionRefs = useRef({});
